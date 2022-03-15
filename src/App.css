@@ -1,0 +1,129 @@
+/* this solves the scroll bar judder */
+body {
+  overflow-y: scroll;
+}
+
+.center {
+  justify-content: center;
+}
+.left {
+  text-align: left;
+}
+
+.full {
+  background-image: url("/public/images/backgroundVirt.jpg");
+  height: 100vh;
+}
+.align {
+  margin-left: 0 !important;
+}
+/* ***************Form********************* */
+
+.btnSubmit {
+  width: 50%;
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.frmMain {
+  margin-top: 5vh;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+  min-height: 60vh;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+.frmMain .frmHeader {
+  font-size: 1.25rem;
+  font-family: sans-serif;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+/* *********************List***************** */
+
+ol li {
+  margin-bottom: 0.3rem;
+}
+
+.listRow {
+  width: 100%;
+}
+/* added to break up long string for overflow. */
+.text-wrap {
+  word-wrap: break-word;
+}
+
+.faIcon {
+  font-size: 2rem;
+  transition: all 0.2s ease-in-out;
+  margin: auto;
+  color: rgba(0, 0, 0, 0.55);
+  display: block;
+}
+.faIcon:hover {
+  color: #4aaeca;
+  transform: scale(1.2);
+}
+
+.icons li svg:hover {
+  color: #4aaeca;
+  transform: scale(1.2);
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  opacity: 1;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media all and (min-width: 960px) {
+  .frmMain {
+    max-width: 800px;
+  }
+}
+
+@media all and (min-width: 770px) {
+  .btnSubmit {
+    width: 100%;
+    margin-top: 0rem;
+  }
+  .full {
+    max-width: 1668px;
+    background-image: url("/public/images/backgroundDesk.jpg");
+  }
+}
