@@ -26,7 +26,7 @@ I learned how to use React hooks to take in and manipulate data entered into an 
 
 ## Installation Instructions: <a name="install"></a>
 
-To install this repository go to [MattpLawrence/Game-Chat](https://github.com/MattpLawrence/short-url). From there clone the repository to your local computer. Make sure to install [Node.js](https://nodejs.org/en/download/) in order to run the application.
+To install this repository go to [MattpLawrence/short-url](https://github.com/MattpLawrence/short-url). From there clone the repository to your local computer. Make sure to install [Node.js](https://nodejs.org/en/download/) in order to run the application.
 
 ## How to Use: <a name="usage"></a>
 
